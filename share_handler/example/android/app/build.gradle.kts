@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace = "com.shoutsocial.share_handler_example"
+    namespace = "com.shoutsocial.share_handler_android_example"
     compileSdk = flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
 
@@ -15,7 +15,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.shoutsocial.share_handler_example"
+        applicationId = "com.shoutsocial.share_handler_android_example"
         minSdk = flutter.minSdkVersion
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode
