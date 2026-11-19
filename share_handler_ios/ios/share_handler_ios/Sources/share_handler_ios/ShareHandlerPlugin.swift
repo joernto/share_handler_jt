@@ -2,16 +2,10 @@ import Flutter
 import UIKit
 import Photos
 import Intents
+import share_handler_ios_models
 
-public class SwiftShareHandlerIosPlatform: NSObject, FlutterPlugin, FlutterStreamHandler, ShareHandlerApi {
+public class ShareHandlerPlugin: NSObject, FlutterPlugin, FlutterStreamHandler, ShareHandlerApi {
     
-    
-    //     public static func register(with registrar: FlutterPluginRegistrar) {
-    //       let channel = FlutterMethodChannel(name: "share_handler_ios", binaryMessenger: registrar.messenger())
-    //       let instance = SwiftShareHandlerPlugin()
-    //       registrar.addMethodCallDelegate(instance, channel: channel)
-    //     }
-
     static let kEventsChannel = "com.shoutsocial.share_handler/sharedMediaStream"
 
     private var customSchemePrefix = "ShareMedia"
