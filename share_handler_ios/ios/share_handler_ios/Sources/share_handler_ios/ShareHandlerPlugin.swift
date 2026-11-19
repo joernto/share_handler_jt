@@ -18,7 +18,7 @@ public class ShareHandlerPlugin: NSObject, FlutterPlugin, FlutterStreamHandler, 
     // Singleton is required for calling functions directly from AppDelegate
     // - it is required if the developer is using also another library, which requires to call "application(_:open:options:)"
     // -> see Example app
-    public static let instance = SwiftShareHandlerIosPlatform()
+    public static let instance = ShareHandlerPlugin()
 
     public static func register(with registrar: FlutterPluginRegistrar) {
         let messenger : FlutterBinaryMessenger = registrar.messenger()
