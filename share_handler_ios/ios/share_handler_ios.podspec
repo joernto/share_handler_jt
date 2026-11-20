@@ -18,10 +18,6 @@ Pod::Spec.new do |s|
   s.public_header_files = 'share_handler_ios/Sources/share_handler_ios/**/*.h'
   s.dependency 'Flutter'
   s.dependency 'share_handler_ios_models'
-  s.subspec 'share_handler_ios_models' do |ss|
-    ss.source_files = 'share_handler_ios/Sources/share_handler_ios_models/**/*'
-    ss.public_header_files = 'share_handler_ios/Sources/share_handler_ios_models/**/*.h'
-  end 
   s.platform = :ios, '15.0'
 
   # Flutter.framework does not contain a i386 slice.

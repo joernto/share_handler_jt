@@ -24,4 +24,3 @@ flutter:
     platforms:
       ios:
         pluginClass: ShareHandlerPlugin
-        podspec: ios/ShareHandlerIos.podspec
