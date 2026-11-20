@@ -4,15 +4,8 @@ import Photos
 import Intents
 import share_handler_ios_models
 
-public class SwiftShareHandlerIosPlatform: NSObject, FlutterPlugin, FlutterStreamHandler, ShareHandlerApi {
+public class ShareHandlerPlugin: NSObject, FlutterPlugin, FlutterStreamHandler, ShareHandlerApi {
     
-    
-    //     public static func register(with registrar: FlutterPluginRegistrar) {
-    //       let channel = FlutterMethodChannel(name: "share_handler_ios", binaryMessenger: registrar.messenger())
-    //       let instance = SwiftShareHandlerPlugin()
-    //       registrar.addMethodCallDelegate(instance, channel: channel)
-    //     }
-
     static let kEventsChannel = "com.shoutsocial.share_handler/sharedMediaStream"
 
     private var customSchemePrefix = "ShareMedia"
@@ -25,7 +18,7 @@ public class SwiftShareHandlerIosPlatform: NSObject, FlutterPlugin, FlutterStrea
     // Singleton is required for calling functions directly from AppDelegate
     // - it is required if the developer is using also another library, which requires to call "application(_:open:options:)"
     // -> see Example app
-    public static let instance = SwiftShareHandlerIosPlatform()
+    public static let instance = ShareHandlerPlugin()
 
     public static func register(with registrar: FlutterPluginRegistrar) {
         let messenger : FlutterBinaryMessenger = registrar.messenger()
